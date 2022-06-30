@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --azul: #2A7AE4;
+    --raleway: 'Raleway', sans-serif;
+}
+
+.container{
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+body{
+    background-color: #ffff;
+    font-family: var(--raleway);
+}

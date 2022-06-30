@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    width: 100vw;
+}
+
+.logo__section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80%;
+}
+
+.logo{
+    height: 2.4vh;
+    padding: 2px;
+}
+
+.logo__joystick{
+    height: 3.5vh;
+}
+
+.login__btn{
+    height: 50%;
+    width: 30%;
+    background: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: 700; 
+}
+
+.search-btn{
+    background: transparent;
+    border: none;
+    
+}
