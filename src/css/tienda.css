@@ -30,6 +30,8 @@
     min-width: 100px;
 
     max-width: 200px;
+
+    max-height: 285px;
 }
 
 
@@ -58,4 +60,17 @@
 
 .producto__titulo, .producto__precio{
     padding-bottom: 8%;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px){
+    .product__store{
+        justify-content:baseline;
+        height: 30vh;
+    }
+    .producto{
+        width: 23.5%;
+        height: 100%;
+        max-height: 350px;
+    }
 }

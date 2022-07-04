@@ -9,16 +9,42 @@ footer{
     padding-bottom:5%;
 }
 
-.logo__footer{
-    padding-bottom: 5%;
+.logo-y-enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+}
 
-    width: 50%;
+.logo__footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20%;
+    padding-bottom: 5%;
+}
+
+.logo__joystick-footer{
+    height: 5.5vh;
+}
+
+.logo-alura{
+    height: 4.4vh;
+    padding: 2px;
+}
+
+.logo-geek{
+    height: 4.4vh;
+    padding: 2px;
 }
 
 .enlaces__footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 }
 
 .enlaces__footer li{
@@ -32,18 +58,26 @@ footer{
 .contacto{
     display: flex;
     width: 100%;
+    height: 35%;
     flex-direction: column;
     align-self: flex-start;
     align-items: flex-start;
+
+    margin-top: 3%;
+}
+
+#contacto-legend{
+    font-size: 16px;
+    font-weight: 700;
 }
 
 #input-nombre{
-    height: 56px;
+    height: 5vh;
 }
 #input-nombre, #mensaje{
     width: 100%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
 }
 
@@ -57,4 +91,58 @@ footer{
     border: none;
     background-color: var(--azul);
     color: white;
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px){
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 364px;
+    }
+
+    .logo-y-enlaces{
+        justify-content: center;
+        align-items:flex-start;
+        width: 48%;
+        height: 100%;
+    }
+    .logo__joystick-footer{
+        height: 4.5vh;
+    }
+    
+    .logo-alura{
+        height: 3.4vh;
+        padding: 2px;
+    }
+    
+    .logo-geek{
+        height: 3.4vh;
+        padding: 2px;
+    }
+
+    .enlaces__footer{
+        align-items: flex-start;
+    }
+
+    .enlaces__footer li{
+        margin-bottom: 6%;
+    }
+
+    .contacto{
+        height: 100%;
+        width: 55%;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    #input-nombre{
+        height: 4vh;
+    }
+    #mensaje{
+        height: 8vh;
+    }
 }

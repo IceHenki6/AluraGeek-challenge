@@ -38,3 +38,13 @@
     border: none;
     
 }
+
+
+/*tablet*/
+
+@media only screen and (min-width: 768px){
+    .login__btn{
+        order: 1;
+    }
+
+}

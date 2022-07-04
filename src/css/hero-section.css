@@ -42,3 +42,24 @@
     /* margin-bottom: 2%;     */
 }
 
+/* tablet */
+
+@media only screen and (min-width: 768px){
+    .hero{
+        height: 352px;
+    }
+
+    .hero__titulo{
+        font-size: 52px;
+    }
+
+    .hero__texto{
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .hero__btn{
+        width: 130px;
+        height: 48px;
+    }
+}
