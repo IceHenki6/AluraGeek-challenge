@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 :root{
     --azul: #2A7AE4;
     --raleway: 'Raleway', sans-serif;
