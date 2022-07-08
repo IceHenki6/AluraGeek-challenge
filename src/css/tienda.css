@@ -20,20 +20,24 @@
     justify-content: space-between;
     /* align-items: center; */
     width: 100%;
-    height: 80vh;
+    height: auto;
 }
 
 .producto{
     width: 47.5%;
-    height: 48%;
+    height: 38vh;
 
-    min-width: 100px;
 
     max-width: 200px;
 
     max-height: 285px;
+    margin-bottom: .5em;
+    overflow: scroll;
 }
 
+.extra{
+    display: none;
+}
 
 .producto__img{
     width:100%;
@@ -44,7 +48,7 @@
 .producto__titulo{
     font-size: 14px;
     font-weight: 400;
-
+    text-overflow:ellipsis;
 }
 
 .producto__precio{
@@ -64,13 +68,36 @@
 
 /* tablet */
 @media only screen and (min-width: 768px){
+    .tienda{
+        padding-top: 2%;
+    }
+    .tienda__titulo{
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
     .product__store{
         justify-content:baseline;
-        height: 30vh;
     }
     .producto{
         width: 23.5%;
-        height: 100%;
         max-height: 350px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .product__store{
+        justify-content:baseline;
+    }
+    .extra{
+        display:block;
+    }
+
+    .producto{
+        width: 15%;
+    }
+
+    .tienda__titulo{
+        padding-top: 2%;
+        padding-bottom: 2.8%;
     }
 }

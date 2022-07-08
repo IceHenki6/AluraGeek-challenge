@@ -96,3 +96,21 @@
         padding-right: 6%;
     }
 }
+
+@media only screen and (min-width: 1024px){
+    .logo{
+        height: 2.4vh;
+        padding: 2px;
+    }
+    
+    .logo__joystick{
+        height: 3.5vh;
+    }
+
+    .login__btn{
+        order: 1;
+        height: 60%;
+        width: 15%;
+    }
+
+}

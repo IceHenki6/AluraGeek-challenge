@@ -63,3 +63,15 @@
         height: 48px;
     }
 }
+
+
+@media only screen and (min-width: 1024px){
+    .hero{
+        padding: 6% 12% 3% 12%;
+    }
+
+    .hero__titulo, .hero__texto{
+        margin-bottom: 2%;
+    }
+    
+}

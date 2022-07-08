@@ -1,0 +1,31 @@
+.menu-administrador{
+    background-color: #E5E5E5;
+    padding-top: 6%;
+    padding-bottom: 6%; 
+}
+
+.todos-los-productos__productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.todos-los-productos__titulo{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#agregar-producto{
+    background-color: var(--azul);
+    border: none;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: .8em;
+}
