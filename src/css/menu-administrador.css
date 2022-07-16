@@ -1,7 +1,16 @@
-.menu-administrador{
+
+
+.todos-los-productos{
     background-color: #E5E5E5;
     padding-top: 6%;
-    padding-bottom: 6%; 
+    width: 100vw;
+    /* padding-bottom: 6%;  */
+}
+
+.todos-los-productos__cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .todos-los-productos__productos{
@@ -28,4 +37,45 @@
     font-size: 14px;
     font-weight: 700;
     margin-top: .8em;
+}
+
+.trash-icon{
+    position: absolute;
+    background-image: url(../images/trashIcon.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    right: 22%;   
+}
+
+.edit-icon{
+    position: absolute;
+    background-image: url(../images/editicon.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    top:5px;
+    right: 4%;
+}
+
+@media only screen and (min-width: 768px){
+    .todos-los-productos{
+        padding-top: 3%;
+        /* padding-bottom: 3%; */
+    }
+
+    .todos-los-productos__productos{
+        padding-top: 3%;
+    }
+
+    .todos-los-productos__cabecera{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #agregar-producto{
+        margin-top: 0;
+    }
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Iniciar Sesión</title>
+        <link rel="stylesheet" href="src/css/reset.css">
+        <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="stylesheet" href="src/css/header.css">
+        <link rel="stylesheet" href="src/css/footer.css">
+        <link rel="stylesheet" href="src/css/login.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="alt-header container">
+            <section class="logo__section">
+              <img src="src/images/logo.svg" alt="" class="logo__joystick">
+              <img src="src/images/alura.svg" alt="" class="logo">
+              <img src="src/images/geek.svg" alt="" class="logo">
+            </section>
+      
+            <div class="alt-search">
+              <input type="text" class="search-bar" placeholder="¿Qué deseas buscar?">
+              <button class="search-btn"><img src="src/images/lupa.svg" alt=""></button>
+            </div>
+            
+        </header>
+        <main>
+            <section class="login container">
+                <h1 class="login__titulo">Iniciar Sesión</h1>
+                <form class="login__form">
+                    <input type="email" id="email" placeholder="Escriba su dirección de correo electrónico" required>
+                    <input type="password" id="password" placeholder="Escriba su contraseña">
+                    <input type="submit" id="submit" value="Entrar">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <section class="logo-y-enlaces container">
+              <section class="logo__footer">
+                <img src="src/images/logo.svg" alt="" class="logo__joystick-footer">
+                <img src="src/images/alura.svg" alt="" class="logo-alura">
+                <img src="src/images/geek.svg" alt="" class="logo-geek">
+              </section>
+        
+              <ul class="enlaces__footer">
+                <li><a>Quienes Somos</a></li>
+                <li><a>Politica de Privacidad</a></li>
+                <li><a>Programa de Fidelidad</a></li>
+                <li><a>Nuestras tiendas</a></li>
+                <li><a>Quiero ser franquiciado</a></li>
+                <li><a>Anúncie aquí</a></li>
+              </ul>
+            </section>
+      
+            
+            <form class="contacto container">
+              <legend id="contacto-legend">Hable con nosotros</legend>
+              <input type="text" id="input-nombre" placeholder="Escribe tu nombre" required>
+              <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+              <input type="submit" value="Submit" id="submit"/>
+            </form>
+          </footer>
+    </body>
+</html>

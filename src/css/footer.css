@@ -1,12 +1,16 @@
 footer{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--celeste);
-    height: 553px;
+    width: 100vw;
+    min-height: 553px;
     padding-top: 5%;
     padding-bottom:5%;
+    height: auto;
+    /* flex-grow: 0;
+    flex-shrink: 1; */
 }
 
 .logo-y-enlaces{
@@ -72,6 +76,7 @@ footer{
 }
 
 #input-nombre{
+    min-height: 40px;
     height: 5vh;
 }
 #input-nombre, #mensaje{
@@ -83,11 +88,14 @@ footer{
 
 #mensaje{
     height: 10vh;
+    min-height: 80px;
 }
 
 #submit{
     width: 133px;
-    height: 40px;
+    min-height: 40px;
+    height: 10vh;
+    max-height: 50px;
     border: none;
     background-color: var(--azul);
     color: white;
@@ -144,5 +152,6 @@ footer{
     }
     #mensaje{
         height: 8vh;
+        resize: none;
     }
 }
