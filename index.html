@@ -35,7 +35,13 @@
       </section>
 
       <section class="tienda container">
-        <h2 class="tienda__titulo">Star Wars</h2>
+        <div class="tienda__encabezado">
+          <h2 class="tienda__titulo">Star Wars</h2>
+          <div class="tienda__ver-todo">
+            <h3 class="ver-todo"><a href="#">Ver todo</a></h3>
+            <img src="src/images/arrrow.svg" alt="" class="ver-todo__arrow">
+          </div>
+        </div>
         <section class="product__store">
           <div class="producto">
             <img class="producto__img" src="src/images/starwarsimg3.png" alt="">
@@ -197,7 +203,7 @@
         <legend id="contacto-legend">Hable con nosotros</legend>
         <input type="text" id="input-nombre" placeholder="Escribe tu nombre" required>
         <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required></textarea>
-        <input type="submit" value="Submit" id="submit"/>
+        <input type="submit" value="Enviar mensaje" id="submit"/>
       </form>
     </footer>
   </body>

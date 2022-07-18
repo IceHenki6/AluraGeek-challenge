@@ -92,13 +92,17 @@ footer{
 }
 
 #submit{
-    width: 133px;
+    width: 150px;
     min-height: 40px;
     height: 10vh;
     max-height: 50px;
     border: none;
     background-color: var(--azul);
     color: white;
+}
+
+#submit:hover{
+    cursor:pointer;
 }
 
 /* tablet */

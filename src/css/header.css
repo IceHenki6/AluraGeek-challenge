@@ -23,6 +23,10 @@
     height: 80%;
 }
 
+.logo__section:hover{
+    cursor: pointer;
+}
+
 .logo{
     height: 2.4vh;
     padding: 2px;
@@ -40,6 +44,10 @@
     color: var(--azul);
     font-size: 14px;
     font-weight: 700; 
+}
+
+.login__btn:hover{
+    cursor: pointer;
 }
 
 .search{
@@ -78,7 +86,10 @@
 .search-btn{
     background: transparent;
     border: none;
-    
+}
+
+.search-btn:hover{
+    cursor: pointer;
 }
 
 
