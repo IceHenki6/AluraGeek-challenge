@@ -28,12 +28,13 @@
         </header>
         <main>
             <section class="agregar-producto container">
-                <form class="agregar-producto__form">
+                <form class="agregar-producto__form" data-form>
                     <legend class="agregar-producto__titulo">Agregar nuevo producto</legend>
-                    <input type="text" id="category" placeholder="Categoría" required>
-                    <input type="text" id="nombre-producto" placeholder="Nombre del producto">
-                    <input type="text" id="precio-del-producto" placeholder="Precio del producto">
-                    <textarea name="description-producto" id="description-producto" placeholder="Descripción del producto"></textarea>
+                    <input type="file" id="img-input" accept="image/png, image/jpg" data-img required>
+                    <input type="text" id="category" placeholder="Categoría" data-category required>
+                    <input type="text" id="nombre-producto" placeholder="Nombre del producto" data-name>
+                    <input type="text" id="precio-del-producto" placeholder="Precio del producto" data-price>
+                    <textarea name="description-producto" id="description-producto" placeholder="Descripción del producto" data-description></textarea>
                     <input type="submit" id="submit-producto" value="Agregar producto">
                 </form>
             </section>
@@ -65,5 +66,9 @@
               <input type="submit" value="Submit" id="submit"/>
             </form>
           </footer>
+
+          <script src="src/javascript/nav-buttons.js"></script>
+          <script type='module' src="src/javascript/controllers/AddProduct-controler.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>

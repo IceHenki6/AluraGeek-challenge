@@ -42,7 +42,7 @@
             <img src="src/images/arrrow.svg" alt="" class="ver-todo__arrow">
           </div>
         </div>
-        <section class="product__store">
+        <section class="product__store" id='starwars' data-store>
           <div class="producto">
             <img class="producto__img" src="src/images/starwarsimg3.png" alt="">
             <h3 class="producto__titulo">Producto XYZ</h3>
@@ -87,54 +87,13 @@
         </section>
 
         <h2 class="tienda__titulo">Consolas</h2>
-        <section class="product__store">
-          <div class="producto">
-            <img class="producto__img" src="src/images/xboxcontroller.png" alt="">
-            <h3 class="producto__titulo">Control XYZ</h3>
-            <h4 class="producto__precio">R$ 60,00</h4>
-            <h4 class="ver-producto">Ver Producto</h4>
-          </div>
-  
-          <div class="producto">
-            <img src="src/images/ps5img.png" alt="" class="producto__img">
-            <h3 class="producto__titulo">Control y consola XYZ</h3>
-            <h4 class="producto__precio">R$ 60,00</h4>
-            <h4 class="ver-producto">Ver Producto</h4>
-          </div>
-  
-          <div class="producto">
-            <img src="src/images/NES.png" alt="" class="producto__img">
-            <h3 class="producto__titulo">Consola XYZ</h3>
-            <h4 class="producto__precio">R$ 60,00</h4>
-            <h4 class="ver-producto">Ver Producto</h4>
-          </div>
-  
-          <div class="producto">
-            <img src="src/images/nintendoswitch.png" alt="" class="producto__img">
-            <h3 class="producto__titulo">Control XYZ</h3>
-            <h4 class="producto__precio">R$ 60,00</h4>
-            <h4 class="ver-producto">Ver Producto</h4>
-          </div>
-
-          <div class="producto extra">
-            <img src="src/images/xboxeriesx.png" alt="" class="producto__img">
-            <h3 class="producto__titulo">Control XYZ</h3>
-            <h4 class="producto__precio">R$ 60,00</h4>
-            <h4 class="ver-producto">Ver Producto</h4>
-          </div>
-
-          <div class="producto extra">
-            <img src="src/images/gameboy.png" alt="" class="producto__img">
-            <h3 class="producto__titulo">Control XYZ</h3>
-            <h4 class="producto__precio">R$ 60,00</h4>
-            <h4 class="ver-producto">Ver Producto</h4>
-          </div>
+        <section class="product__store" id="consolas" data-store>
 
         </section>
 
 
         <h2 class="tienda__titulo">Diversos</h2>
-        <section class="product__store">
+        <section class="product__store" id="diversos" data-store>
           <div class="producto">
             <img class="producto__img" src="src/images/atarilogo.png" alt="">
             <h3 class="producto__titulo">Camisa Atari</h3>
@@ -206,5 +165,9 @@
         <input type="submit" value="Enviar mensaje" id="submit"/>
       </form>
     </footer>
+
+    <script src="src/javascript/nav-buttons.js"></script>
+    <script type="module" src="src/javascript/controllers/producto-controller.js"></script>
+
   </body>
 </html>
