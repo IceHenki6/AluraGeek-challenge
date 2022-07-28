@@ -1,5 +1,5 @@
 import { productServices } from "../services/product-services.js";
-console.log('Hallo?')
+
 const CrearProducto = (name, imgurl, price,hidden) =>{
     const producto = document.createElement('div');
     producto.classList.add('producto');

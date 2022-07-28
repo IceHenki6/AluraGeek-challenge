@@ -31,7 +31,15 @@
                 <form class="agregar-producto__form" data-form>
                     <legend class="agregar-producto__titulo">Agregar nuevo producto</legend>
                     <input type="file" id="img-input" accept="image/png, image/jpg" data-img required>
-                    <input type="text" id="category" placeholder="Categoría" data-category required>
+                    <!-- <input type="text" id="category" placeholder="Categoría" data-category required> -->
+                    <label>Categoría
+                      <select name="select-category" id="select" required data-category>
+                        <option value="">Elige una categoría</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                      </select>  
+                  </label>
                     <input type="text" id="nombre-producto" placeholder="Nombre del producto" data-name>
                     <input type="text" id="precio-del-producto" placeholder="Precio del producto" data-price>
                     <textarea name="description-producto" id="description-producto" placeholder="Descripción del producto" data-description></textarea>

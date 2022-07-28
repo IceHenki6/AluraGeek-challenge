@@ -6,7 +6,6 @@ const TiendaProductos = (tienda) => {
 }
 
 
-
 const agregarProducto = (name,imgurl,description,price,category)=>{
     return fetch(`http://localhost:3000/${category}`,{
         method: "POST",
@@ -18,7 +17,15 @@ const agregarProducto = (name,imgurl,description,price,category)=>{
     )
 }
 
+
+const DeleteProduct = (tienda,id) => {
+    return fetch(`http://localhost:3000/${tienda}/${id}`,{
+        method: "DELETE"
+    })
+}
+
 export const productServices = {
     agregarProducto,
-    TiendaProductos
+    TiendaProductos,
+    DeleteProduct
 };
