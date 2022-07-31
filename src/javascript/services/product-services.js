@@ -6,6 +6,11 @@ const TiendaProductos = (tienda) => {
 }
 
 
+const productData = (id,category)=>{
+    return fetch(`http://localhost:3000/${category}/${id}`).then((response) => 
+    response.json());
+}
+
 const agregarProducto = (name,imgurl,description,price,category)=>{
     return fetch(`http://localhost:3000/${category}`,{
         method: "POST",
@@ -18,6 +23,17 @@ const agregarProducto = (name,imgurl,description,price,category)=>{
 }
 
 
+const updateProduct = (name,price,description,imgurl,store,id)=>{
+    return fetch((`http://localhost:3000/${store}/${id}`), {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json" 
+        },
+        body: JSON.stringify({name,price,description,imgurl})
+    }).then( response => response)
+    .catch((err)=>console.log(err))
+}
+
 const DeleteProduct = (tienda,id) => {
     return fetch(`http://localhost:3000/${tienda}/${id}`,{
         method: "DELETE"
@@ -27,5 +43,7 @@ const DeleteProduct = (tienda,id) => {
 export const productServices = {
     agregarProducto,
     TiendaProductos,
-    DeleteProduct
+    DeleteProduct,
+    productData,
+    updateProduct
 };

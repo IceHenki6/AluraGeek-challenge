@@ -12,6 +12,7 @@ imgInput.addEventListener('change',function(){
     reader.readAsDataURL(this.files[0]);
 })
 
+
 const form = document.querySelector('[data-form]');
 
 form.addEventListener('submit', (event)=>{

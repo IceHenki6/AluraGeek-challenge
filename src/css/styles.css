@@ -24,10 +24,28 @@ body{
     font-family: var(--raleway);
 }
 
+.nav__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 45px;
+    width: 140px;
+    background: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: 700; 
+}
 
 @media only screen and (min-width: 1024px){
     .container{
         padding-right: 12%;
         padding-left: 12%;
+    }
+
+    .nav__btn{
+        order: 1;
+        width: 150px;
     }
 }

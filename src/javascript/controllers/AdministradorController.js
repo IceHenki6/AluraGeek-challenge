@@ -10,7 +10,7 @@ const CrearProducto = (name, imgurl, price, id, store) =>{
         <h4 class="producto__precio">$ ${price}</h4>
         <h4 class="ver-producto">Ver Producto</h4>
         <button class="trash-icon" type='button' id='${id}'></button>
-        <button class="edit-icon" type='button'></button>
+        <a class="edit-icon" href="/edit-client.html?category=${store}&id=${id}"></a>
     `
 
 

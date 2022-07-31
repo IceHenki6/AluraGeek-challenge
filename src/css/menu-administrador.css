@@ -39,6 +39,10 @@
     margin-top: .8em;
 }
 
+#agregar-producto:hover{
+    cursor:pointer;
+}
+
 .trash-icon{
     background: transparent;
     position: absolute;

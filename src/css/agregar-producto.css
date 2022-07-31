@@ -24,18 +24,50 @@
     align-self: flex-start;
 }
 
-#category, #nombre-producto,#precio-del-producto{
+
+#img-input{
+    display: none;
+}
+
+#img-input+label{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    width: 150px;
+    height: 35px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+#nombre-producto,#precio-del-producto{
     width: 100%;
     min-width: 300px;
     min-height: 50px;
     height: 8vh;
     max-height: 60px;
-    margin-top: 5%;
+    margin-top: 1.5em;
     border: none;
     border-radius: 4px;
     padding: 3%;
     font-size: .85em;
     font-weight: 400;    
+}
+
+
+select{
+    margin-top: 2em;
+    width: 100%;
+    min-width: 300px;
+    height: 45px;
+    background-color: white;
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    text-align: center;
+    font-weight: 700;
 }
 
 #description-producto{
@@ -44,7 +76,7 @@
     min-height: 60px;
     height: 10vh;
     max-height: 80px;
-    margin-top: 5%;
+    margin-top: 2em;
     border: none;
     border-radius: 4px;
     padding: 3%;
