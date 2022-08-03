@@ -57,3 +57,43 @@
         height: 60vh;
     }
 }
+
+/*error messages*/
+.error{
+   border: 2px solid red;
+   color: red; 
+}
+
+.error-message{
+    display: none;
+}
+
+.error-message p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    height: 30px;
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 14px;
+
+    background-color: var(--azul);
+    color: white;
+
+    border-radius: 15px;
+}
+
+.show-err{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .6s linear;
+}
+
+.hide-err{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .6s, opacity .6s linear;
+}

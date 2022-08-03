@@ -28,32 +28,15 @@
       
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero__titulo">Febrero Promocional</h1>
-        <p class="hero__texto">Productos seleccionados con 33% de descuento</p>
-        <button class="hero__btn">Ver Consolas</button>
-      </section>
-
       <section class="tienda container">
         <div class="tienda__encabezado">
-          <h2 class="tienda__titulo">Star Wars</h2>
+          <h2 class="tienda__titulo">Productos</h2>
           <div class="tienda__ver-todo">
             <h3 class="ver-todo"><a href="#">Ver todo</a></h3>
             <img src="src/images/arrrow.svg" alt="" class="ver-todo__arrow">
           </div>
         </div>
-        <section class="product__store" id='starwars' data-store>
-
-        </section>
-
-        <h2 class="tienda__titulo">Consolas</h2>
-        <section class="product__store" id="consolas" data-store>
-
-        </section>
-
-
-        <h2 class="tienda__titulo">Diversos</h2>
-        <section class="product__store" id="diversos" data-store>
+        <section class="product__store" data-allproducts>
 
         </section>
 
@@ -87,7 +70,7 @@
     </footer>
 
     <script src="src/javascript/nav-buttons.js"></script>
-    <script type="module" src="src/javascript/controllers/producto-controller.js"></script>
     <script src="src/javascript/search.js"></script>
+    <script type="module" src="src/javascript/controllers/search-controller.js"></script>
   </body>
 </html>

@@ -26,7 +26,6 @@ stores.forEach(store => {
     let hideProduct = false;
     productServices.TiendaProductos(store.id).then((data)=>{
         data.forEach(({name,imgurl,price}) => {
-            console.log(data.length);
             if (numberOfProducts>=4) hideProduct = true;
             const newProduct = CrearProducto(name,imgurl,price,hideProduct);
             store.appendChild(newProduct);

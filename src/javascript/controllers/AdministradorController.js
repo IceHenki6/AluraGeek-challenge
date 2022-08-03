@@ -27,15 +27,23 @@ const CrearProducto = (name, imgurl, price, id, store) =>{
 }
 
 
-const allProductsSection = document.querySelector('[data-allproducts]');
 const stores = ['consolas', 'starwars', 'diversos'];
 
 
-stores.forEach(store => {
-    productServices.TiendaProductos(store).then((data)=>{
-        data.forEach(({name,imgurl,price,id}) => {
-            const newProduct = CrearProducto(name,imgurl,price,id,store);
-            allProductsSection.appendChild(newProduct);
-        });
-    }).catch((error) => alert(error));
-})
+function addProducts(stores){
+    const allProductsSection = document.querySelector('[data-allproducts]');
+
+
+
+    stores.forEach(store => {
+        productServices.TiendaProductos(store).then((data)=>{
+            data.forEach(({name,imgurl,price,id}) => {
+                const newProduct = CrearProducto(name,imgurl,price,id,store);
+                allProductsSection.appendChild(newProduct);
+            });
+        }).catch((error) => alert(error));
+    })
+}
+
+addProducts(stores);
+

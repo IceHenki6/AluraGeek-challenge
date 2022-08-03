@@ -28,11 +28,13 @@
         <main>
             <section class="login container">
                 <h1 class="login__titulo">Iniciar Sesión</h1>
-                <form class="login__form">
-                    <input type="email" id="email" placeholder="Escriba su dirección de correo electrónico" required>
-                    <input type="password" id="password" placeholder="Escriba su contraseña">
+                <form class="login__form" data-login>
+                    <input type="email" id="email" placeholder="Escriba su dirección de correo electrónico" required data-email>
+                    <input type="password" id="password" placeholder="Escriba su contraseña" required data-password>
                     <input type="submit" id="login-btn" value="Entrar">
                 </form>
+
+                <div class="error-message"><p>Email o contraseña incorrectos</p></div>
             </section>
         </main>
 
@@ -64,5 +66,6 @@
           </footer>
           
           <script src="src/javascript/nav-buttons.js"></script>
+          <script type="module" src="src/javascript/controllers/login-controller.js"></script>
     </body>
 </html>
