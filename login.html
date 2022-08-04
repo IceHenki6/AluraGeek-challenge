@@ -20,10 +20,11 @@
             </section>
       
             <div class="alt-search">
-              <input type="text" class="search-bar" placeholder="¿Qué deseas buscar?">
-              <button class="search-btn"><img src="src/images/lupa.svg" alt=""></button>
+              <input type="search" class="search-bar hidden" placeholder="¿Qué deseas buscar?" data-search>
+              <button class="search-btn" data-search-btn><img src="src/images/lupa.svg"></button>
             </div>
-            
+            <button class="false-search-btn hidden"><img src="src/images/lupa.svg"></button>
+            <button class="cancel-search hidden">X</button>
         </header>
         <main>
             <section class="login container">
@@ -67,5 +68,6 @@
           
           <script src="src/javascript/nav-buttons.js"></script>
           <script type="module" src="src/javascript/controllers/login-controller.js"></script>
+          <script src="src/javascript/search.js"></script>
     </body>
 </html>

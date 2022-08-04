@@ -19,13 +19,14 @@
         <img src="src/images/alura.svg" alt="" class="logo">
         <img src="src/images/geek.svg" alt="" class="logo">
       </section>
-      <a href="/login.html" class="nav__btn">Login</a>
+      <a href="/login.html" class="nav__btn" id="login">Login</a>
 
       <div class="search">
-        <input type="search" class="search-bar" placeholder="¿Qué deseas buscar?" data-search>
-        <button class="search-btn"><img src="src/images/lupa.svg" alt="" data-search-btn></button>
+        <input type="search" class="search-bar hidden" placeholder="¿Qué deseas buscar?" data-search>
+        <button class="search-btn" data-search-btn><img src="src/images/lupa.svg"></button>
       </div>
-      
+      <button class="false-search-btn hidden"><img src="src/images/lupa.svg"></button>
+      <button class="cancel-search hidden">X</button>
     </header>
     <main>
       <section class="hero">
@@ -38,7 +39,7 @@
         <div class="tienda__encabezado">
           <h2 class="tienda__titulo">Star Wars</h2>
           <div class="tienda__ver-todo">
-            <h3 class="ver-todo"><a href="#">Ver todo</a></h3>
+            <h3 class="ver-todo"><a href="/products.html">Ver todo</a></h3>
             <img src="src/images/arrrow.svg" alt="" class="ver-todo__arrow">
           </div>
         </div>
@@ -46,13 +47,26 @@
 
         </section>
 
-        <h2 class="tienda__titulo">Consolas</h2>
+
+        <div class="tienda__encabezado">
+          <h2 class="tienda__titulo">Consolas</h2>
+          <div class="tienda__ver-todo">
+            <h3 class="ver-todo"><a href="/products.html">Ver todo</a></h3>
+            <img src="src/images/arrrow.svg" alt="" class="ver-todo__arrow">
+          </div>
+        </div>
         <section class="product__store" id="consolas" data-store>
 
         </section>
 
 
-        <h2 class="tienda__titulo">Diversos</h2>
+        <div class="tienda__encabezado">
+          <h2 class="tienda__titulo">Diversos</h2>
+          <div class="tienda__ver-todo">
+            <h3 class="ver-todo"><a href="/products.html">Ver todo</a></h3>
+            <img src="src/images/arrrow.svg" alt="" class="ver-todo__arrow">
+          </div>
+        </div>
         <section class="product__store" id="diversos" data-store>
 
         </section>
@@ -80,8 +94,8 @@
       
       <form class="contacto container">
         <legend id="contacto-legend">Hable con nosotros</legend>
-        <input type="text" id="input-nombre" placeholder="Escribe tu nombre" required>
-        <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+        <input name="name" type="text" id="input-nombre" placeholder="Escribe tu nombre" required minlength="3" maxlength="50">
+        <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required maxlength="240"></textarea>
         <input type="submit" value="Enviar mensaje" id="submit"/>
       </form>
     </footer>

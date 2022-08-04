@@ -22,10 +22,11 @@
         </section>
   
         <div class="alt-search">
-          <input type="text" class="search-bar" placeholder="¿Qué deseas buscar?">
-          <button class="search-btn"><img src="src/images/lupa.svg" alt=""></button>
+          <input type="text" class="search-bar hidden" placeholder="¿Qué deseas buscar?" data-search>
+          <button class="search-btn" data-search-btn><img src="src/images/lupa.svg" alt=""></button>
         </div>
-        
+        <button class="false-search-btn hidden"><img src="src/images/lupa.svg"></button>
+        <button class="cancel-search hidden">X</button>
     </header>
 
     <main>
@@ -72,5 +73,6 @@
     <script type="module" src="src/javascript/controllers/AdministradorController.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="src/javascript/nav-buttons.js"></script>
+    <script src="src/javascript/search.js"></script>
   </body>
 </html>
