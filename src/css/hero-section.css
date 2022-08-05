@@ -72,6 +72,7 @@
 @media only screen and (min-width: 1024px){
     .hero{
         padding: 6% 12% 3% 12%;
+        height: 400px;
     }
 
     .hero__titulo, .hero__texto{

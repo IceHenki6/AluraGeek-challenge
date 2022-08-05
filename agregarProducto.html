@@ -42,9 +42,9 @@
                     <input type="file" id="img-input" accept="image/png, image/jpg" data-img required>
                     <label for="img-input">Subir imagen...</label>
 
-                    <input type="text" id="nombre-producto" placeholder="Nombre del producto" data-name>
-                    <input type="text" id="precio-del-producto" placeholder="Precio del producto" data-price>
-                    <textarea name="description-producto" id="description-producto" placeholder="Descripción del producto" data-description></textarea>
+                    <input type="text" id="nombre-producto" placeholder="Nombre del producto" data-name required minlength="1" maxlength="50">
+                    <input type="text" id="precio-del-producto" placeholder="Precio del producto" data-price minlength="1" maxlength="6">
+                    <textarea name="description-producto" id="description-producto" placeholder="Descripción del producto" data-description required minlength="1" maxlength="600"></textarea>
 
                     <input type="submit" id="submit-producto" value="Agregar producto">
                 </form>

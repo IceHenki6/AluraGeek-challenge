@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/ver-producto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header class="header container">
+      <section class="logo__section">
+        <img src="src/images/logo.svg" alt="" class="logo__joystick">
+        <img src="src/images/alura.svg" alt="" class="logo">
+        <img src="src/images/geek.svg" alt="" class="logo">
+      </section>
+      <a href="/login.html" class="nav__btn" id="login">Login</a>
+
+      <div class="search">
+        <input type="search" class="search-bar hidden" placeholder="¿Qué deseas buscar?" data-search>
+        <button class="search-btn" data-search-btn><img src="src/images/lupa.svg"></button>
+      </div>
+      <button class="false-search-btn hidden"><img src="src/images/lupa.svg"></button>
+      <button class="cancel-search hidden">X</button>
+    </header>
+
+
+    <main>
+        <section class="product-content" data-product-content>
+
+        </section> 
+    </main>
+
+
+
+    <footer>
+      <section class="logo-y-enlaces container">
+        <section class="logo__footer">
+          <img src="src/images/logo.svg" alt="" class="logo__joystick-footer">
+          <img src="src/images/alura.svg" alt="" class="logo-alura">
+          <img src="src/images/geek.svg" alt="" class="logo-geek">
+        </section>
+  
+        <ul class="enlaces__footer">
+          <li><a>Quienes Somos</a></li>
+          <li><a>Politica de Privacidad</a></li>
+          <li><a>Programa de Fidelidad</a></li>
+          <li><a>Nuestras tiendas</a></li>
+          <li><a>Quiero ser franquiciado</a></li>
+          <li><a>Anúncie aquí</a></li>
+        </ul>
+      </section>
+
+      
+      <form class="contacto container">
+        <legend id="contacto-legend">Hable con nosotros</legend>
+        <input name="name" type="text" id="input-nombre" placeholder="Escribe tu nombre" required minlength="3" maxlength="50">
+        <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required maxlength="240"></textarea>
+        <input type="submit" value="Enviar mensaje" id="submit"/>
+      </form>
+    </footer>
+
+    <script src="src/javascript/nav-buttons.js"></script>
+    <script src="src/javascript/search.js"></script>
+    <script type="module" src="src/javascript/controllers/VerProductoController.js"></script>
+  </body>
+</html>

@@ -28,5 +28,6 @@ form.addEventListener('submit', (event)=>{
 
     productServices.agregarProducto(productName, productImage,productDescription,productPrice,productCategory).then((response)=>{
         console.log(response);
+        window.location.href = '/administrador.html';
     }).catch(err => console.log(err));
 })
