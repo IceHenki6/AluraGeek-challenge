@@ -32,16 +32,10 @@
             <section class="agregar-producto container">
                 <form class="agregar-producto__form" data-form>
                     <legend class="agregar-producto__titulo">Editar Producto</legend>
-            
-                    <!-- <select name="select-category" id="select" required data-category>
-                      <option value="">Elige una categoría</option>
-                      <option value="starwars">Star Wars</option>
-                      <option value="consolas">Consolas</option>
-                      <option value="diversos">Diversos</option>
-                    </select> -->
 
-                    <input type="file" id="img-input" accept="image/png, image/jpg" data-img>
-                    <label for="img-input">Subir imagen...</label>
+                    <label id="img-upload">Subir imagen...
+                        <input type="file" id="img-input" accept="image/png, image/jpg" data-img required>
+                    </label>
 
                     <input type="text" id="nombre-producto" placeholder="Nombre del producto" data-name>
                     <input type="text" id="precio-del-producto" placeholder="Precio del producto" data-price>
@@ -52,6 +46,41 @@
             </section>
         </main>
 
+        <footer>
+            <div class="logo-and-form">
+                <section class="logo-y-enlaces container">
+                    <section class="logo__footer">
+                        <img src="src/images/logo.svg" alt="" class="logo__joystick-footer">
+                        <img src="src/images/alura.svg" alt="" class="logo-alura">
+                        <img src="src/images/geek.svg" alt="" class="logo-geek">
+                    </section>
+        
+                    <ul class="enlaces__footer">
+                        <li><a>Quienes Somos</a></li>
+                        <li><a>Politica de Privacidad</a></li>
+                        <li><a>Programa de Fidelidad</a></li>
+                        <li><a>Nuestras tiendas</a></li>
+                        <li><a>Quiero ser franquiciado</a></li>
+                        <li><a>Anúncie aquí</a></li>
+                    </ul>
+                </section>
+        
+        
+                <form class="contacto container">
+                    <legend id="contacto-legend">Hable con nosotros</legend>
+                    <input name="name" type="text" id="input-nombre" placeholder="Escribe tu nombre" required minlength="3"
+                        maxlength="50">
+                    <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required
+                        maxlength="240"></textarea>
+                    <input type="submit" value="Enviar mensaje" id="submit" />
+                </form>
+            </div>
+        
+            <section class="datos-desarrollador">
+                <p>Desarrollado por Federico Manuel Maximovicz</p>
+                <p>&copy 2022</p>
+            </section>
+        </footer>
         <script type="module" src="src/javascript/controllers/UpdateProduct-controller.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="src/javascript/search.js"></script>

@@ -33,6 +33,9 @@
 }
 
 .hero__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 118px;
     height: 40px;
     background-color: var(--azul);

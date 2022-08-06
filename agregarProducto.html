@@ -39,8 +39,12 @@
                       <option value="diversos">Diversos</option>
                     </select>
 
-                    <input type="file" id="img-input" accept="image/png, image/jpg" data-img required>
-                    <label for="img-input">Subir imagen...</label>
+
+                    <label id="img-upload">Subir imagen...
+                      <input type="file" id="img-input" accept="image/png, image/jpg" data-img required>
+                    </label>
+                    
+                    
 
                     <input type="text" id="nombre-producto" placeholder="Nombre del producto" data-name required minlength="1" maxlength="50">
                     <input type="text" id="precio-del-producto" placeholder="Precio del producto" data-price minlength="1" maxlength="6">
@@ -52,6 +56,7 @@
         </main>
 
         <footer>
+          <div class="logo-and-form">
             <section class="logo-y-enlaces container">
               <section class="logo__footer">
                 <img src="src/images/logo.svg" alt="" class="logo__joystick-footer">
@@ -72,11 +77,17 @@
             
             <form class="contacto container">
               <legend id="contacto-legend">Hable con nosotros</legend>
-              <input type="text" id="input-nombre" placeholder="Escribe tu nombre" required>
-              <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required></textarea>
-              <input type="submit" value="Submit" id="submit"/>
+              <input name="name" type="text" id="input-nombre" placeholder="Escribe tu nombre" required minlength="3" maxlength="50">
+              <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required maxlength="240"></textarea>
+              <input type="submit" value="Enviar mensaje" id="submit"/>
             </form>
-          </footer>
+          </div>
+    
+          <section class="datos-desarrollador">
+            <p>Desarrollado por Federico Manuel Maximovicz</p>
+            <p>&copy 2022</p>
+          </section>
+        </footer>
 
           <script src="src/javascript/nav-buttons.js"></script>
           <script type='module' src="src/javascript/controllers/AddProduct-controler.js"></script>

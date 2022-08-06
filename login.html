@@ -40,6 +40,7 @@
         </main>
 
         <footer>
+          <div class="logo-and-form">
             <section class="logo-y-enlaces container">
               <section class="logo__footer">
                 <img src="src/images/logo.svg" alt="" class="logo__joystick-footer">
@@ -60,11 +61,17 @@
             
             <form class="contacto container">
               <legend id="contacto-legend">Hable con nosotros</legend>
-              <input type="text" id="input-nombre" placeholder="Escribe tu nombre" required>
-              <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+              <input name="name" type="text" id="input-nombre" placeholder="Escribe tu nombre" required minlength="3" maxlength="50">
+              <textarea name="" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje" required maxlength="240"></textarea>
               <input type="submit" value="Enviar mensaje" id="submit"/>
             </form>
-          </footer>
+          </div>
+    
+          <section class="datos-desarrollador">
+            <p>Desarrollado por Federico Manuel Maximovicz</p>
+            <p>&copy 2022</p>
+          </section>
+        </footer>
           
           <script src="src/javascript/nav-buttons.js"></script>
           <script type="module" src="src/javascript/controllers/login-controller.js"></script>

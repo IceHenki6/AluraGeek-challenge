@@ -27,14 +27,10 @@ if(window.innerWidth<768){
         toggleSearchBtns();
         toggleLogoAndLogin();
         cancelSearch.addEventListener('click', quitSearch = ()=>{
-            // searchBar.classList.add('hidden');
-            // loginBtn.classList.remove('hidden');
-            // logoSection.classList.remove('hidden');
-            // cancelSearch.classList.add('hidden');
+
             toggleSearchBtns();
             toggleLogoAndLogin();
             searchBar.value='';
-            console.log('asd');
             cancelSearch.removeEventListener('click',quitSearch);
         })
 
@@ -48,7 +44,6 @@ if(window.innerWidth<768){
     searchBar.classList.remove('hidden');
     searchBtn.addEventListener('click', ()=>{
         const searchInput = document.querySelector('[data-search]').value;
-        console.log(searchInput);
         window.location.href=`/products.html?search=${searchInput}`;
     })
 }
