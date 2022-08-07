@@ -8,7 +8,7 @@ const CrearProducto = (name, imgurl, price, id, store) =>{
         <img class="producto__img" src="${imgurl}" alt="">
         <h3 class="producto__titulo">${name}</h3>
         <h4 class="producto__precio">$ ${price}</h4>
-        <h4 class="ver-producto">Ver Producto</h4>
+        <a href="/ver-producto.html?category=${store}&id=${id}" class="ver-producto">Ver Producto</a>
         <button class="trash-icon" type='button' id='${id}'></button>
         <a class="edit-icon" href="/edit-product.html?category=${store}&id=${id}"></a>
     `
