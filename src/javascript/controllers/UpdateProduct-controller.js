@@ -26,7 +26,6 @@ const obtainProductData = async () =>{
             productPrice.value = product.price;
             productDescription.value = product.description;
             img.src = product.imgurl;
-            console.log(img.src);
         }else{
             throw new Error();
         }

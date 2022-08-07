@@ -55,6 +55,10 @@
     border: none;   
 }
 
+.trash-icon:hover{
+    cursor: pointer;
+}
+
 .edit-icon{
     background: transparent;
     position: absolute;
