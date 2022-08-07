@@ -4,10 +4,10 @@
 
 # Importante: 
     Para ejecutar este proyecto debes descargarlo y abrirlo con tu editor de texto favorito. Es importante tener instalado NodeJs e instalar json server, a este último lo puedes instalar abriendo la terminal en el directorio del proyecto y escribiendo en la consola:
-    ```
-    npm install json-server
-    npm run json-server --watch db.json
-    ```
+```
+npm install json-server
+npm run json-server --watch db.json
+```
 
 ## Requerimientos del proyecto:
 

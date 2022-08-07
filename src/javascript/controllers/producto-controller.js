@@ -31,6 +31,6 @@ stores.forEach(store => {
             store.appendChild(newProduct);
             numberOfProducts++;
         });
-    }).catch((error) => alert(error));
+    }).catch(() => alert('Whoops! Algo ha salido mal, probablemente abriste el proyecto desde GitHub pages, ingresa a mi repositorio y sigue las instrucciones para ejecutar el proyecto: https://github.com/IceHenki6/AluraGeek-challenge'));
 })
 
